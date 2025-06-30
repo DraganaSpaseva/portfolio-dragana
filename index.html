@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body{
+        background:url("bg-blured.jpg")repeat-y;
+        background-size: contain;
+        margin: 0px;
+        font-family: 'Inter', sans-serif;
+        justify-items: center;
+    }
+    nav{
+        width: 60%;
+        height: 80px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px auto;
+        background-color: rgba(1, 37, 56, 0.56);
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+    }
+    h2{
+        font-size: 62px;
+        display: flex;
+        color: #FF7043;
+        font-family: Kalnia, serif;
+        justify-content: center;
+        justify-items: center;
+        margin:0px auto;
+
+    }
+    #creator{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 60%;
+        margin:auto;
+        justify-content: center;
+        img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+        }
+
+        p:first-of-type{
+            font-size: 18px;
+            margin: auto;
+            justify-items: center;
+            strong{
+                color:#FF7043 ;
+            }
+            .orange{
+                color:#FF7043 ;
+            }
+        }
+
+        p:last-of-type{
+            font-size: 20px;
+            width: 50%;
+            margin: 0px auto;
+        }
+    }
+    #work{
+        background-color: rgba(20, 2, 39, 0.61);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        margin: 30px 0px;
+        h2{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 40px;
+        }
+        >div{
+            display: flex;
+            width: 1000px;
+            /*margin: 20px auto;*/
+            flex-wrap: wrap;
+            justify-items: center;
+            gap: 20px;
+
+
+            .work-item{
+                width: 48%;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                img{
+                    border-radius: 35px;
+
+                }
+
+                color: white;
+                h4{
+                    width: 450px;
+                    align-content: start;
+                    margin: 15px  0px;
+                    font-family: Kalnia, serif;
+                    font-size:25px;
+                    color: white;
+                }
+                p{
+                    margin: 10px;
+                    width: 450px;
+
+                    color: lightgray;
+                    align-content: start;
+                }
+            }
+        }
+    ;
+    }
+    .orange{
+        color: #FF7043;
+    }
+    #education{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        color: white;
+        h2{
+            font-size: 40px;
+        }
+
+        #skills{
+            display: flex;
+
+            gap: 30px;
+
+        }
+        #line{
+            width: 72px;
+            height: 369px;
+        }
+        >div{
+            width: 1000px;
+            margin: 40px auto;
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            gap:20px;
+            >p{
+                width: 40%;
+                font-size: 20px;
+                text-align: end;
+            }
+            >div{
+                text-align: center;
+
+            }
+            .icons{
+                display:flex ;
+                align-items: center;
+                gap: 15px;
+                h4{
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+    #skills > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }.contact-section {
+         background-color: #341840;
+         border-radius: 30px;
+         color: white;
+         padding: 50px 20px;
+         font-family: Arial, sans-serif;
+        margin-bottom: 50px;
+             margin-top: 50px;
+     }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .contact-info {
+        p{
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .contact-info h2 {
+        font-size: 40px;
+    }
+
+    .contact-links p {
+        margin: 15px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-links .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .contact-form {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form label {
+        margin-bottom: 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        background-color: purple;
+        border: 1px solid #fff;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .contact-form button {
+        background-color:#FF7043 ;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="#creator">ABOUT ME</a>
+    <a href="#skills">EDUCATION & SKILLS</a>
+    <a href="#work">MY WORK</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+
+<!-- About Me Section -->
+<section id="creator">
+    <h2>Meet the Creator</h2>
+    <p>Hey, I'm <strong>Dragana</strong> | Based in <span class="orange">Macedonia</span></p>
+    <img src="me2.png" alt="Dragana photo placeholder" width="400" height="450">
+    <p>
+        I am a tech-oriented and creative college student with a strong passion for UX/UI design, digital tools, and problem-solving.
+        I enjoy blending logic with aesthetics to craft functional, user-friendly experiences.
+    </p>
+
+</section>
+
+<!-- My Work Section -->
+<section id="work">
+    <h2>My work</h2>
+    <div>
+        <div class="work-item">
+            <img src="donut.png" alt="Project 1 preview" width="450" height="380">
+            <h4><span class="orange">"Donut Bliss"</span> – Ordering App for a Local Donut Shop</h4>
+            <p></p>
+        </div>
+
+        <div class="work-item">
+            <img src="KINDERG.png" alt="Project 2 preview" width="450" height="380" style="margin-top: 10px">
+            <h4> <span class="orange">"Little Steps"</span> – Mobile App for Kindergarten Parents & Teachers</h4>
+            <p></p>
+        </div>
+
+        <div class="work-item">
+            <img src="rest.png" alt="Project 3 preview" width="450" height="380">
+            <h4> <span class="orange">"Fork & Flame"</span> – Smart Menu and Table Reservation App</h4>
+            <p></p>
+        </div>
+
+        <div class="work-item">
+            <img src="BEAUTY.png" alt="Project 4 preview" width="450" height="380">
+            <h4> <span class="orange">"GlowUp Studio"</span> – Appointment Booking App for Beauty Salons</h4>
+            <p></p>
+        </div>
+    </div>
+</section>
+<section id="education">
+    <h2>Education & skills</h2>
+    <div >
+    <p class="desc">I have a solid background in computer technology and automation. I completed my primary education at "Blaže Koneski" and high school at RCSOU "Kole Nedelkovski" in Veles. I am currently pursuing university studies in Software Engineering. I completed high school at RCSOU "Kole Nedelkovski" in Veles. I hold a Google UX/UI Certificate and a U.S. Embassy English Program diploma. My skills include Figma, Photoshop, Illustrator, HTML, CSS, C++, Canva, and Microsoft 365, combining creativity with technical knowledge.</p>
+        <img id="line" src="vertical.png">
+        <div id="skills">
+        <div>
+        <div class="icons">
+            <img src="figma.png" width="40px" height="40px">
+            <h4>Figma</h4>
+        </div>
+        <div class="icons">
+            <img src="ps.png" width="40px" height="40px">
+            <h4>Adobe Photoshop</h4>
+        </div>
+        <div class="icons">
+            <img src="ai.png" width="40px" height="40px">
+            <h4>Adobe Illustrator</h4>
+        </div></div>
+
+        <div class="side2">
+        <div class="icons">
+            <img src="html.png" width="40px" height="40px">
+            <h4>Html</h4>
+        </div>
+        <div class="icons">
+            <img src="css.png" width="40px" height="40px">
+            <h4>CSS</h4>
+        </div>
+        <div class="icons">
+            <img src="c++.png" width="40px" height="40px">
+            <h4>C++</h4>
+        </div>
+    </div>
+
+    </div>
+    </div>
+</section>
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Have a project in mind?</h2>
+            <p>My inbox is always open for new opportunities.</p>
+            <div class="contact-links">
+                <p><img src="git.png" alt="GitHub" class="icon"> GitHub</p>
+                <p><img src="email.png" alt="Email" class="icon"> draganaspaseva17@gmail.com</p>
+                <p><img src="linked.png" alt="LinkedIn" class="icon"> Dragana Spaseva</p>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+
+</body>
+</html>
